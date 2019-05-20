@@ -12,7 +12,14 @@ header{
     @media (max-width: 500px){
         max-width: auto;
     }
-    
+    .logo {
+        font-size: 2rem;
+         &:hover{
+                color: rgb(212, 2, 2);
+                cursor: pointer;
+            }
+       
+    }
 
     
 }
@@ -34,13 +41,12 @@ header{
         width: 100%;
         padding: 1rem 0;
         // padding: 0;
+        
     }
     
 }
 
-h1 {
-    font-size: 2rem;
-}
+
 .nav{
     font-size: 1.25rem;
     color: darkgrey;
@@ -65,9 +71,3 @@ li {
 
 }
 
-h1{
-     &:hover{
-         color: rgb(212, 2, 2);
-         cursor: pointer;
-     }
-}
