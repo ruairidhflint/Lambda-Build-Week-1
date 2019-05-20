@@ -126,11 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   color: red;
-}
-header {
-  border: 1px solid black;
 }
 .navbar {
   max-width: 900px;
@@ -153,6 +154,32 @@ ul {
 }
 li {
   padding: 0 2rem;
+}
+li:nth-child(4) {
+  color: #787878;
+}
+li:hover {
+  color: #c8c8c8;
+}
+.top-content,
+.middle-content,
+.bottom-content {
+  height: 55rem;
+  border: 1px solid red;
+  text-align: center;
+}
+.top-content h1,
+.middle-content h1,
+.bottom-content h1 {
+  margin-top: 20rem;
+}
+footer {
+  height: 10rem;
+  border: 1px solid red;
+}
+footer h1 {
+  margin-top: 4rem;
+  text-align: center;
 }
 body {
   font-family: 'Comfortaa', cursive;
