@@ -275,7 +275,7 @@ li:hover {
   height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 12rem;
   margin-bottom: 12rem;
@@ -311,6 +311,10 @@ li:hover {
   width: 25rem;
   height: 5rem;
   margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  border: 0px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 500px) {
   .bottom-container-redo .right-bottom input {
@@ -319,7 +323,7 @@ li:hover {
 }
 .bottom-container-redo .right-bottom .sign-up-button {
   font-size: 1.2rem;
-  width: 10rem;
+  width: 16rem;
   height: 3rem;
   border: 1px darkgrey solid;
   border-radius: 5px;
@@ -331,7 +335,7 @@ li:hover {
 }
 .right-bottom-alt {
   display: none;
-  width: 300px;
+  width: 400px;
 }
 footer {
   height: 4rem;
@@ -399,7 +403,7 @@ footer .footer-links {
   padding-top: 1rem;
   transition: 0.2s ease-in-out;
   opacity: 0.9;
-  filter: grayscale(4 0%);
+  filter: grayscale(40%);
 }
 @media (max-width: 500px) {
   .right-side .image-container {
@@ -407,7 +411,7 @@ footer .footer-links {
   }
 }
 .right-side .image-container:hover {
-  filter: none;
+  filter: grayscale(0%);
   transition: 0.2s ease-in-out;
 }
 .right-side img {
@@ -420,6 +424,51 @@ footer .footer-links {
 }
 .login-footer {
   margin-top: 10rem;
+}
+.wrapper {
+  background-image: linear-gradient(to right, #E6DADA, #274046);
+}
+.log-in {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  right: 50%;
+  bottom: 80%;
+  left: 65%;
+  width: 300px;
+  height: 400px;
+  background-color: #eeeeee;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hidden1 {
+  display: none;
+}
+.logo1 {
+  font-size: 2.5rem;
+  height: 4rem;
+  color: red;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 10rem;
+}
+.logo1:hover {
+  opacity: 0.7;
+}
+.text1 {
+  text-align: center;
+  height: 5rem;
+  width: 25rem;
+  background-color: #f8f8f8;
+  border: 0px solid black;
+  border-radius: 5px;
+  margin-top: 5rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+}
+.radio-text {
+  margin-top: 4rem;
+  font-size: 1rem;
 }
 body {
   font-family: 'Comfortaa', cursive;

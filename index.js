@@ -5,7 +5,10 @@ let input2 = document.querySelector('#input-two');
 let submitButton = document.querySelector('button');
 let form = document.querySelector('.right-bottom');
 let altForm = document.querySelector('.right-bottom-alt');
+
 inputs.forEach(input => input.required = true);
+
+
 
 submitButton.addEventListener('click', logDetails);
 submitButton.addEventListener('click', submitted)
@@ -26,5 +29,11 @@ function submitted() {
 
 }
 
+let loginButton = document.querySelector('.buttonlogin');
+let loginPanel = document.querySelector('.log-in');
 
+loginButton.addEventListener('click', openPanel);
 
+function openPanel() {
+    loginPanel.classList.toggle('hidden1')
+}
