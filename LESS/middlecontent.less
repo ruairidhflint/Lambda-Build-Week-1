@@ -1,5 +1,5 @@
 .middle-content {
-    height: 50rem;
+    // height: 50rem;
     background-color: rgb(243, 243, 243)
 }
 
@@ -13,7 +13,8 @@
     justify-content: space-between;
     position: relative;
     top: 20%;   
-    // margin-top: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .text {
@@ -30,4 +31,19 @@
         line-height: 2rem;  
     }
 
+}
+
+@media (max-width: 500px){
+    .middle-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        // border: 1px solid red;
+    }
+
+    .text {
+        max-width: 90%;
+        // border: 1px solid blue;
+    }
 }

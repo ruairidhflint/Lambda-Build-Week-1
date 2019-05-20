@@ -172,7 +172,6 @@ h1:hover {
   color: #d40202;
 }
 .top-content {
-  height: 55rem;
   margin-top: 7rem;
   background-image: linear-gradient(to right, #E6DADA, #274046);
   display: flex;
@@ -181,10 +180,11 @@ h1:hover {
   margin: 0 auto;
   width: 950px;
   max-width: 950px;
-  height: 55rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .top-container .right-side {
   width: 100%;
@@ -209,8 +209,13 @@ h1:hover {
   height: auto;
   max-width: 100%;
 }
+@media (max-width: 500px) {
+  .top-container {
+    flex-direction: column-reverse;
+    margin-top: 1rem;
+  }
+}
 .middle-content {
-  height: 50rem;
   background-color: #f3f3f3;
 }
 .middle-container {
@@ -220,6 +225,8 @@ h1:hover {
   justify-content: space-between;
   position: relative;
   top: 20%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .text {
   max-width: 250px;
@@ -232,6 +239,17 @@ h1:hover {
 .text p {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .middle-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .text {
+    max-width: 90%;
+  }
 }
 .bottom-content {
   height: 45rem;
