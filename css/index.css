@@ -130,15 +130,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
-body {
-  color: red;
-}
 header {
   width: 100%;
   position: fixed;
   top: 0;
   margin: 0 auto;
   background-color: white;
+  color: red;
 }
 .navbar {
   max-width: 900px;
@@ -169,14 +167,50 @@ li:nth-child(4) {
 li:hover {
   color: #c8c8c8;
 }
-.top-content,
+.top-content {
+  height: 55rem;
+  margin-top: 7rem;
+  background-image: linear-gradient(to right, #E6DADA, #274046);
+  display: flex;
+}
+.top-container {
+  margin: 0 auto;
+  width: 850px;
+  max-width: 850px;
+  border: 1px red solid;
+  height: 55rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-side {
+  width: 100%;
+  max-width: 350px;
+  padding: 10rem 0;
+  border-left: 1px solid red;
+}
+.right-side h2 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.right-side p {
+  font-size: 2rem;
+  color: white;
+  padding: 1.5rem;
+}
+.left-side {
+  width: 500px;
+  max-width: 500px;
+  border-right: 1px solid red;
+}
 .middle-content,
 .bottom-content {
   height: 55rem;
 }
-.top-content {
-  margin-top: 7rem;
-  background-image: linear-gradient(to right, #E6DADA, #274046);
+.bottom-content {
+  background-image: linear-gradient(to right, #274046, #E6DADA);
 }
 footer {
   height: 10rem;
