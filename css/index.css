@@ -139,6 +139,12 @@ header {
   color: red;
   z-index: 1;
 }
+@media (max-width: 500px) {
+  header {
+    max-width: auto;
+    position: static;
+  }
+}
 .navbar {
   max-width: 900px;
   margin: 0 auto;
@@ -152,6 +158,8 @@ header {
   .navbar {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 1rem 0;
   }
 }
 h1 {
@@ -182,6 +190,11 @@ h1:hover {
   background-image: linear-gradient(to right, #E6DADA, #274046);
   display: flex;
 }
+@media (max-width: 500px) {
+  .top-content {
+    margin-top: 2rem;
+  }
+}
 .top-container {
   margin: 0 auto;
   width: 950px;
@@ -194,7 +207,7 @@ h1:hover {
 }
 .top-container .right-side {
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   padding: 10rem 0;
 }
 .top-container .right-side h2 {
@@ -218,7 +231,7 @@ h1:hover {
 @media (max-width: 500px) {
   .top-container {
     flex-direction: column-reverse;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 }
 .middle-content {
@@ -235,7 +248,7 @@ h1:hover {
   padding-bottom: 10rem;
 }
 .text {
-  max-width: 250px;
+  max-width: 450px;
   padding: 2rem;
 }
 .text h3 {
@@ -257,9 +270,6 @@ h1:hover {
     max-width: 90%;
   }
 }
-.bottom-content {
-  height: 45rem;
-}
 .bottom-container-redo {
   max-width: 900px;
   height: 100%;
@@ -267,11 +277,24 @@ h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+@media (max-width: 500px) {
+  .bottom-container-redo {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .bottom-container-redo .left-bottom {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bottom-container-redo .left-bottom {
+    margin-bottom: 5rem;
+  }
 }
 .bottom-container-redo h1 {
   font-size: 4rem;
@@ -281,12 +304,17 @@ h1:hover {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  max-width: 400px;
+  max-width: 450px;
 }
 .bottom-container-redo .right-bottom input {
   width: 25rem;
   height: 5rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .bottom-container-redo .right-bottom input {
+    width: 20rem;
+  }
 }
 .bottom-container-redo .right-bottom .sign-up-button {
   font-size: 1.2rem;
@@ -305,24 +333,39 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
 footer .footer-links {
   max-width: 800px;
   margin: 0 auto;
 }
 .middle-content-bottom {
-  height: 55rem;
   background-image: linear-gradient(to right, #274046, #E6DADA);
 }
 .middle-container-1 {
   margin: 0 auto;
   max-width: 950px;
-  height: 55rem;
   justify-content: space-between;
   align-items: center;
   display: flex;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+@media (max-width: 500px) {
+  .middle-container-1 {
+    flex-direction: column;
+  }
 }
 .left-side {
-  max-width: 350px;
+  max-width: 450px;
+}
+@media (max-width: 500px) {
+  .left-side {
+    margin-bottom: 4rem;
+  }
 }
 .left-side h2 {
   font-size: 4rem;
@@ -348,6 +391,11 @@ footer .footer-links {
   transition: 0.2s ease-in-out;
   opacity: 0.9;
 }
+@media (max-width: 500px) {
+  .right-side .image-container {
+    width: 100px;
+  }
+}
 .right-side .image-container:hover {
   opacity: 0.6;
   transition: 0.2s ease-in-out;
@@ -359,4 +407,17 @@ footer .footer-links {
 body {
   font-family: 'Comfortaa', cursive;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }

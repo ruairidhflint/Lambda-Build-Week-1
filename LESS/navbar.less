@@ -8,6 +8,11 @@ header{
     color: red;
     z-index: 1;
     // border: 1px solid green;
+
+    @media (max-width: 500px){
+        max-width: auto;
+        position: static;
+    }
     
 
     
@@ -23,9 +28,12 @@ header{
     justify-content: space-between;
     // position: absolute;
     top: 0;
+    // border: 1px solid blue;
     @media(max-width:500px){
         flex-direction: column; 
         align-items: center;
+        width: 100%;
+        padding: 1rem 0;
         // padding: 0;
     }
     

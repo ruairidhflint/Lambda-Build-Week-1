@@ -1,7 +1,4 @@
-.bottom-content{
-    height: 45rem;
-   
-}
+
 
 .bottom-container-redo {
     max-width: 900px;
@@ -10,12 +7,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    // border: 1px solid red;
+
+    @media (max-width: 500px){
+        flex-direction: column;
+        width:  100%;
+    }
     
 
     .left-bottom{
         width: 100%;
-        max-width: 400px;
+        max-width: 450px;
         text-align: center;
+
+        @media (max-width: 500px){
+            margin-bottom: 5rem;
+        }
 
     }
     
@@ -29,7 +38,7 @@
         align-items: center;
         width: 400px;
         // width: 100%;
-        max-width: 400px;
+        max-width: 450px;
         // text-align: center;
         // border: 1px solid blue;
 
@@ -37,6 +46,10 @@
             width: 25rem;
             height: 5rem;
             margin-bottom: 1rem;
+
+            @media (max-width: 500px){
+                width: 20rem;
+            }
             
         }
 
