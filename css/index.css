@@ -256,9 +256,6 @@ h1:hover {
   height: auto;
   width: 100%;
 }
-.bottom-content {
-  height: 45rem;
-}
 .bottom-container {
   max-width: 900px;
   margin: 0 auto;
@@ -278,6 +275,45 @@ h1:hover {
 .text p {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.bottom-content {
+  height: 45rem;
+}
+.bottom-container-redo {
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-container-redo .left-bottom {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.bottom-container-redo h1 {
+  font-size: 4rem;
+}
+.bottom-container-redo .right-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  max-width: 400px;
+}
+.bottom-container-redo .right-bottom input {
+  width: 25rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+.bottom-container-redo .right-bottom .sign-up-button {
+  font-size: 1.2rem;
+  width: 10rem;
+  height: 3rem;
+  border: 1px darkgrey solid;
+  border-radius: 5px;
+  color: #4b4a4a;
 }
 footer {
   height: 4rem;
