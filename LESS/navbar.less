@@ -6,6 +6,7 @@ header{
     margin: 0 auto;
     background-color: white;
     color: red;
+    z-index: 1;
 }
 
 
@@ -18,7 +19,7 @@ header{
     justify-content: space-between;
     
     top: 0;
-   
+    
 }
 
 h1 {
@@ -46,4 +47,10 @@ li {
         color: rgb(200, 200, 200);
     }
 
+}
+
+h1{
+     &:hover{
+         color: rgb(212, 2, 2);
+     }
 }
