@@ -188,13 +188,13 @@ li:hover {
   padding: 10rem 0;
 }
 .top-container .right-side h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   margin-bottom: 1rem;
   padding: 1rem;
 }
 .top-container .right-side p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   padding: 1.5rem;
 }
@@ -227,7 +227,7 @@ li:hover {
   padding: 1rem;
 }
 .left-side p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #274046;
   padding: 1.5rem;
 }
@@ -252,9 +252,28 @@ li:hover {
   width: 100%;
 }
 .bottom-content {
-  height: 55rem;
+  height: 45rem;
 }
-.bottom-content {
+.bottom-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+.text {
+  max-width: 250px;
+  padding: 2rem;
+}
+.text h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.text p {
+  font-size: 1.5rem;
+}
+.middle-content-bottom {
+  height: 55rem;
   background-image: linear-gradient(to right, #274046, #E6DADA);
 }
 footer {
