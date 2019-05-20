@@ -129,13 +129,30 @@ table {
 body {
   color: red;
 }
+header {
+  border: 1px solid black;
+}
 .navbar {
   max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 2.5rem 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+.nav {
+  font-size: 1.25rem;
+  color: darkgrey;
+}
+ul {
+  display: flex;
+  margin-right: 3rem;
+}
+li {
+  padding: 0 2rem;
 }
 body {
   font-family: 'Comfortaa', cursive;
