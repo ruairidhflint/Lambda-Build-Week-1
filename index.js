@@ -41,15 +41,4 @@ submitButton.addEventListener('click', logDetails);
 submitButton.addEventListener('click', submitted)
 
 
-////Temporary test
-
-// let menuButton = document.querySelector('.menu');
-// let menu = document.querySelector('.log-in1');
-// menuButton.addEventListener('click', openMenu);
-
-
-// function openMenu(){
-//     menu.classList.toggle('hidden2');
-
-// }
 

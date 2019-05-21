@@ -37,7 +37,7 @@ header{
     top: 0;
     // border: 1px solid blue;
     @media(max-width:500px){
-        flex-direction: row; 
+        flex-direction: column; 
         align-items: center;
         width: 100%;
         padding: 1rem 0;
@@ -47,30 +47,16 @@ header{
     }
     
 }
-.menu{
-    padding-right: 4rem;
-    cursor: pointer;
-    display:none;
-
-    @media(max-width: 500px){
-        display:block;
-    }
-}
-.hamburger{
-    width: 2.5rem;
-    height: 0.3rem;
-    background-color: black;
-    margin: 0.5rem 0;  
-
-}
-
 
 .nav{
     font-size: 1.25rem;
     color: darkgrey;
     @media(max-width:500px){
-        display: none;
+        padding-top: 1rem;
     }
+
+    
+
 }
 ul {
     display: flex;
