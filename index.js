@@ -10,8 +10,7 @@ inputs.forEach(input => input.required = true);
 
 
 
-submitButton.addEventListener('click', logDetails);
-submitButton.addEventListener('click', submitted)
+
 
 
 
@@ -37,3 +36,6 @@ loginButton.addEventListener('click', openPanel);
 function openPanel() {
     loginPanel.classList.toggle('hidden1')
 }
+
+submitButton.addEventListener('click', logDetails);
+submitButton.addEventListener('click', submitted)
