@@ -337,11 +337,15 @@ li:hover {
 }
 .bottom-container-redo .right-bottom .sign-up-button:hover {
   color: red;
-  border: 1px red solid;
 }
 .right-bottom-alt {
   display: none;
   width: 400px;
+}
+@media (max-width: 500px) {
+  .right-bottom-alt {
+    width: 80%;
+  }
 }
 footer {
   height: 4rem;

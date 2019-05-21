@@ -2,7 +2,7 @@
 let inputs = document.querySelectorAll('input');
 let input1 = document.querySelector('#input-one');
 let input2 = document.querySelector('#input-two');
-let submitButton = document.querySelector('button');
+let submitButton = document.querySelector('.sign-up-button');
 let form = document.querySelector('.right-bottom');
 let altForm = document.querySelector('.right-bottom-alt');
 
