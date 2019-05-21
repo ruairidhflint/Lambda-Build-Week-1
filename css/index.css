@@ -146,6 +146,7 @@ header {
 }
 header .logo {
   font-size: 2rem;
+  padding-left: 2rem;
 }
 header .logo:hover {
   color: #d40202;
@@ -162,15 +163,36 @@ header .logo:hover {
 }
 @media (max-width: 500px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     padding: 1rem 0;
   }
 }
+.menu {
+  padding-right: 4rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 500px) {
+  .menu {
+    display: block;
+  }
+}
+.hamburger {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: black;
+  margin: 0.5rem 0;
+}
 .nav {
   font-size: 1.25rem;
   color: darkgrey;
+}
+@media (max-width: 500px) {
+  .nav {
+    display: none;
+  }
 }
 ul {
   display: flex;
