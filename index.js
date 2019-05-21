@@ -5,14 +5,9 @@ let input2 = document.querySelector('#input-two');
 let submitButton = document.querySelector('.sign-up-button');
 let form = document.querySelector('.right-bottom');
 let altForm = document.querySelector('.right-bottom-alt');
+let signupButton = document.querySelector('.signup-button');
 
 inputs.forEach(input => input.required = true);
-
-
-
-
-
-
 
 function logDetails() {
     let email = input1.value;
@@ -38,7 +33,10 @@ function openPanel() {
 }
 
 submitButton.addEventListener('click', logDetails);
-submitButton.addEventListener('click', submitted)
+submitButton.addEventListener('click', submitted);
 
+signupButton.addEventListener('click', closeMenu);
 
-
+function closeMenu(){
+    loginPanel.classList.toggle('hidden1')
+};
