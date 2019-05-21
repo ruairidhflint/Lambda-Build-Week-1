@@ -9,37 +9,51 @@ class EmployeeClass{
         this.name = employeeData.name;
         this.bio = employeeData.bio;
         this.photo = employeeData.photo;
-        
+
+        this.createElements();
+        this.appendChildren();
+        this.assignContent();
+        this.assignClasses();
+      
+        docLocation.appendChild(this.maindiv);
+    }
+
+    createElements(){
         this.maindiv = document.createElement('div');
         this.leftdiv = document.createElement('div');
         this.employeephoto = document.createElement('img');
-        this.leftdiv.appendChild(this.employeephoto);
         this.rightdiv = document.createElement('div');
         this.employeename = document.createElement('h2');
         this.employeebio = document.createElement('p');
+
+    }
+
+    appendChildren(){
+        this.leftdiv.appendChild(this.employeephoto);
         this.rightdiv.appendChild(this.employeename)
         this.rightdiv.appendChild(this.employeebio)
-        
         this.maindiv.appendChild(this.leftdiv);
         this.maindiv.appendChild(this.rightdiv);
 
+    }
+
+    assignContent(){
         this.employeename.textContent = this.name;
         this.employeebio.textContent = this.bio;
         this.employeephoto.src = this.photo;
+    }
 
+    assignClasses(){
         this.maindiv.classList.add("employee");
         this.rightdiv.classList.add('employee-right');
         this.leftdiv.classList.add('employee-left');
-
-        docLocation.appendChild(this.maindiv);
-
-        
-
-
     }
+
+
+
 }
 
 
-let employeesLive = employees.forEach(employee => new EmployeeClass(employee));
+let employeeData= employees.forEach(employee => new EmployeeClass(employee));
 
 
