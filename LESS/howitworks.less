@@ -50,6 +50,11 @@
         img {
             height: auto;
             max-width: 100%;
+
+            @media (max-width:500px) {
+                max-width: 300px;
+                
+            }
             
         }
     }
@@ -68,7 +73,7 @@
 /////////
 
 .how-middle-content {
-    height: 50rem;   
+    // height: 50rem;   
     background-color: rgb(243, 243, 243)
 }
 
@@ -89,12 +94,13 @@
     max-width: 230px;
     // border: 1px solid red;
     margin-top: 8rem;
+    margin-bottom: 8rem
 }
 
 .step-top{
     width: 100%;
     max-width: 230px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     background-color:  rgb(248, 248, 248);
     border-radius: 50%; 
 
@@ -105,7 +111,7 @@
 }
 
 .step-bottom {
-    color: 274046;
+    color: #274046;
 
     h3 {
         font-size: 1.8rem;
@@ -131,6 +137,22 @@
         align-items: center;
         width: 100%;
         // border: 1px solid red;
+    }
+
+    .step-box{
+        margin-bottom: 2rem;
+        max-width: 350px;
+        align-items: center;
+    }
+    
+
+    .step-bottomn{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .step-box:last-child{
+        margin-bottom: 7rem;
     }
 
 }
