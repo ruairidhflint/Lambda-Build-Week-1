@@ -845,7 +845,7 @@ footer .footer-links {
 @media (max-width: 500px) {
   .premium-container {
     flex-direction: column-reverse;
-    margin-top: 0rem;
+    margin-top: 8rem;
     align-items: center;
   }
 }
