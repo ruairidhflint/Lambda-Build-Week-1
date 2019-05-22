@@ -548,31 +548,45 @@ footer .footer-links {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
-.about-top-container .about-right-side {
+.about-right-side {
   width: 100%;
   max-width: 450px;
   padding: 10rem 0;
 }
-.about-top-container .about-right-side h2 {
+@media (max-width: 500px) {
+  .about-right-side {
+    text-align: center;
+  }
+}
+.about-right-side h2 {
   font-size: 3rem;
   color: white;
   margin-bottom: 1rem;
   padding: 1rem;
 }
-.about-top-container .about-right-side p {
+.about-right-side h3 {
+  font-size: 1.8rem;
+  color: white;
+  padding: 1rem;
+}
+.about-right-side h3 span {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.about-right-side p {
   font-size: 1.5rem;
   color: white;
   padding: 1.5rem;
 }
-.about-top-container .about-left-side {
-  max-width: 500px;
+.about-left-side {
+  max-width: 450px;
 }
 @media (max-width: 500px) {
-  .about-top-container .about-left-side {
+  .about-left-side {
     max-width: 420px;
   }
 }
-.about-top-container .about-left-side img {
+.about-left-side img {
   height: auto;
   max-width: 100%;
 }
@@ -598,7 +612,7 @@ footer .footer-links {
   display: flex;
   flex-direction: column;
   margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 1rem;
 }
 .employee {
   display: flex;

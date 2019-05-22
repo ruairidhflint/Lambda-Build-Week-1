@@ -20,10 +20,17 @@
     margin-top: 8rem;
     margin-bottom: 8rem;
 
+    
+    }
+
     .about-right-side {
         width: 100%;
         max-width: 450px;
         padding: 10rem 0;
+
+        @media(max-width: 500px){
+            text-align:center;
+        }
         
         // border-left: 1px solid red;
         
@@ -32,6 +39,17 @@
             color: white;
             margin-bottom: 1rem;
             padding: 1rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: white;
+            
+            padding: 1rem;
+
+            span{
+                font-size: 1.5rem;
+                padding-left: 1rem;
+            }
         }
     
         p{
@@ -44,7 +62,7 @@
     
     .about-left-side {
         // width: 500px;
-        max-width:500px;
+        max-width:450px;
         // border-right: 1px solid red;
 
         @media(max-width: 500px){
@@ -57,7 +75,7 @@
             
         }
     }
-}
+
 
 @media(max-width: 500px){
     .about-top-container{
@@ -90,7 +108,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-bottom: 1rem;
     
 }
 
