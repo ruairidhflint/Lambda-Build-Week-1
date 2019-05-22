@@ -800,6 +800,12 @@ footer .footer-links {
   max-width: 450px;
   padding: 10rem 0;
 }
+@media (max-width: 500px) {
+  .premium-container .premium-right-side {
+    text-align: center;
+    max-width: 400px;
+  }
+}
 .premium-container .premium-right-side h2 {
   font-size: 3rem;
   color: white;
@@ -833,13 +839,14 @@ footer .footer-links {
 }
 @media (max-width: 500px) {
   .premium-container .premium-left-side img {
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 @media (max-width: 500px) {
   .premium-container {
     flex-direction: column-reverse;
     margin-top: 0rem;
+    align-items: center;
   }
 }
 body {
