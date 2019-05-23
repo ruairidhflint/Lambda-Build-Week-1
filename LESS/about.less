@@ -2,7 +2,7 @@
     margin-top: 7rem;
     background-image: linear-gradient(to right, @primary , @secondary);
     display: flex;
-    @media(max-width: 500px){
+    @media @mobile {
         margin-top: 2rem;
     }
 }
@@ -25,7 +25,7 @@
         max-width: 450px;
         padding: 10rem 0;
 
-        @media(max-width: 500px){
+        @media @mobile {
             text-align:center;
         }
 
@@ -37,7 +37,7 @@
         }
         h3 {
             font-size: 1.8rem;
-            color: white;
+            color: @white;
             
             padding: 1rem;
 
@@ -49,7 +49,7 @@
     
         p{
             font-size: 1.5rem;
-            color: white;
+            color: @white;
             padding: 1.5rem;
         }
     }
@@ -57,32 +57,27 @@
     .about-left-side {
         max-width:450px;
 
-        @media(max-width: 500px){
+        @media @mobile {
             max-width: 350px;
         }
     
         img {
             height: auto;
             max-width: 100%;
-            
         }
     }
 
-
-@media(max-width: 500px){
+@media @mobile {
     .about-top-container{
         flex-direction: column-reverse;
         margin-top: 0rem;
-        
     }
-    
 }
 
 
 .about-content{
-    // height: 55rem;
     display: flex;
-    @media(max-width: 500px){
+    @media @mobile {
         margin-top: 2rem;
     }
 }
@@ -95,21 +90,18 @@
     flex-direction: column;
     margin-top: 8rem;
     margin-bottom: 1rem;
-    
 }
 
 .employee {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    // border: 1px solid blue;
     margin-bottom: 2rem;
-    // color:rgb(243, 243, 243);
-    color: #274046;
+    color: @secondary;
     h2 {
         font-size: 3rem;
         margin-bottom: 2rem;
-        @media(max-width: 500px){
+        @media @mobile {
             text-align: center;
         }
     }
@@ -119,10 +111,9 @@
         line-height: 120%;
     }
 
-    @media(max-width: 500px){
+    @media @mobile {
         flex-direction: column;
         align-items: center;
-        
     }
 }
 
@@ -141,7 +132,7 @@
     margin-top: 2rem;
     width: 100%;
     max-width: 600px;
-    @media(max-width: 500px){
+    @media @mobile {
         width: 90%;
     }
 }

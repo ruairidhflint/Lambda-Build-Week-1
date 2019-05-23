@@ -10,7 +10,7 @@
     margin-top: 12rem;
     margin-bottom: 12rem;
 
-    @media (max-width: 500px){
+    @media @mobile {
         flex-direction: column;
         width:  100%;
     }
@@ -20,7 +20,7 @@
         max-width: 450px;
         text-align: center;
 
-        @media (max-width: 500px){
+        @media @mobile{
             margin-bottom: 5rem;
         }
     }
@@ -36,7 +36,7 @@
         width: 400px;
         max-width: 450px;
         display: block;
-        @media (max-width: 500px){
+        @media @mobile{
             width: 80%;
             margin-left:5rem;
         }
@@ -48,10 +48,9 @@
             background-color: @offwhite;
             border: 0px solid black;
             border-radius: 5px;
-            // margin-top: 5rem;
             box-shadow:0px 4px 24px rgba(0, 0, 0, 0.1);
 
-            @media (max-width: 500px){
+            @media @mobile{
                 width: 80%;
             }
             
@@ -78,7 +77,7 @@
 .right-bottom-alt{
     display: none;
     width: 400px;
-    @media (max-width: 500px){
+    @media @mobile {
         width: 80%;
     }
 }

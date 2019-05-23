@@ -2,7 +2,7 @@
     margin-top: 7rem;
     background-image: linear-gradient(to right, @primary , @secondary);
     display: flex;
-    @media(max-width: 500px){
+    @media @mobile {
         margin-top: 2rem;
     }
 }
@@ -17,7 +17,6 @@
     margin-top: 8rem;
     margin-bottom: 8rem;
     
-
     .how-right-side {
         width: 100%;
         max-width: 450px;
@@ -44,20 +43,18 @@
             height: auto;
             max-width: 100%;
 
-            @media (max-width:500px) {
+            @media @mobile {
                 max-width: 300px;
             }
         }
     }
 }
 
-@media(max-width: 500px){
+@media @mobile {
     .how-container{
         flex-direction: column-reverse;
         margin-top: 0rem;
-        
     }
-    
 }
 
 .how-middle-content {
@@ -71,7 +68,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-   
 }
 
 .step-box{
@@ -113,7 +109,7 @@
     }
 }
 
-@media (max-width: 500px){
+@media @mobile{
     .how-middle-container{
         flex-direction: column;
         justify-content: center;

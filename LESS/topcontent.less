@@ -2,7 +2,7 @@
     margin-top: 7rem;
     background-image: linear-gradient(to right, @primary , @secondary);
     display: flex;
-    @media(max-width: 500px){
+    @media  @mobile {
         margin-top: 2rem;
     }
 }
@@ -29,7 +29,7 @@
             padding: 1rem;
         }
     
-        p{
+        p {
             font-size: 1.8rem;
             color: @white;
             padding: 1.5rem;
@@ -46,7 +46,7 @@
     }
 }
 
-@media(max-width: 500px){
+@media @mobile {
     .top-container{
         flex-direction: column-reverse;
         margin-top: 0rem;
