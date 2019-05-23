@@ -727,7 +727,7 @@ footer .footer-links {
 .step-box {
   display: flex;
   flex-direction: column;
-  max-width: 230px;
+  max-width: 400px;
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
