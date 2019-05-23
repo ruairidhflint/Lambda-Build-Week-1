@@ -8,11 +8,10 @@
     left: 65%;
     width: 280px;
     height: 340px;
-    background-color: rgb(238, 238, 238);
+    background-color: @offwhite;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
     align-items: center;
     z-index: 2;
 
@@ -20,11 +19,9 @@
         margin-top: 2rem;
         font-size: 1.2rem;
         a:hover{
-            color: red;
+            color: @mainred;
         }
-        
     }
-    
 }
 
 .hidden1{
@@ -33,7 +30,7 @@
 .logo1{
     font-size: 2.5rem;
     height: 4rem;
-    color: red;
+    color: @mainred;
     border-bottom: 1px solid lightgrey;
     margin-top: 2rem;
     &:hover{
@@ -45,12 +42,11 @@
     text-align: center;
     height: 5rem;
     width: 25rem;
-    background-color: rgb(248, 248, 248);
+    background-color: @offwhite;
     border: 0px solid black;
     border-radius: 5px;
     margin-top: 3rem;
     box-shadow:0px 4px 24px rgba(0, 0, 0, 0.2);
-
 }
 
 .logged-button{
@@ -60,9 +56,8 @@
     border-radius: 5px;
 
     &:hover{
-        color: red;
-        border: 1px solid red;
-        
+        color: @mainred;
+        border: 1px solid @mainred;
     }
 }
 

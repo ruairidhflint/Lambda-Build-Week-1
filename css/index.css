@@ -342,7 +342,7 @@ li:hover {
   width: 25rem;
   height: 5rem;
   margin-bottom: 1rem;
-  background-color: #f8f8f8;
+  background-color: #f3f3f3;
   border: 0px solid black;
   border-radius: 5px;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
@@ -362,6 +362,7 @@ li:hover {
 }
 .bottom-container-redo .right-bottom .sign-up-button:hover {
   color: red;
+  border: 1px red solid;
 }
 .right-bottom-alt {
   display: none;
@@ -392,7 +393,7 @@ footer .footer-links {
   margin: 0 auto;
 }
 .middle-content-bottom {
-  background-image: linear-gradient(to right, #274046, #E6DADA);
+  background-image: linear-gradient(to right, #E6DADA, #274046);
 }
 .middle-container-1 {
   margin: 0 auto;
@@ -463,7 +464,7 @@ footer .footer-links {
   left: 65%;
   width: 280px;
   height: 340px;
-  background-color: #eeeeee;
+  background-color: #f3f3f3;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -494,7 +495,7 @@ footer .footer-links {
   text-align: center;
   height: 5rem;
   width: 25rem;
-  background-color: #f8f8f8;
+  background-color: #f3f3f3;
   border: 0px solid black;
   border-radius: 5px;
   margin-top: 3rem;
@@ -599,7 +600,6 @@ footer .footer-links {
   }
 }
 .about-content {
-  margin-top: 1rem;
   display: flex;
 }
 @media (max-width: 500px) {
@@ -694,7 +694,7 @@ footer .footer-links {
 }
 .how-container .how-right-side p {
   font-size: 1.8rem;
-  color: white;
+  color: #f3f3f3;
   padding: 1.5rem;
 }
 .how-container .how-left-side {
@@ -735,7 +735,7 @@ footer .footer-links {
   width: 100%;
   max-width: 230px;
   margin-bottom: 3rem;
-  background-color: #f8f8f8;
+  background-color: #f3f3f3;
   border-radius: 50%;
 }
 .step-top img {
@@ -851,7 +851,7 @@ footer .footer-links {
   }
 }
 .premium-middle-content {
-  background-color: #f3f3f3;
+  background-color: white;
 }
 .premium-middle-container {
   max-width: 1000px;
@@ -870,7 +870,7 @@ footer .footer-links {
   width: 100%;
   max-width: 230px;
   margin-bottom: 3rem;
-  background-color: #f8f8f8;
+  background-color: white;
   border-radius: 50%;
 }
 .premium-top img {

@@ -1,7 +1,6 @@
 .how-content{
-    // height: 55rem;
     margin-top: 7rem;
-    background-image: linear-gradient(to right, #E6DADA , #274046);
+    background-image: linear-gradient(to right, @primary , @secondary);
     display: flex;
     @media(max-width: 500px){
         margin-top: 2rem;
@@ -12,8 +11,6 @@
     margin: 0 auto;
     width: 950px;
     max-width: 950px;
-    // border: 1px red solid;
-    // height: 55rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,24 +25,20 @@
         
         h2 {
             font-size: 3rem;
-            color: white;
+            color: @white;
             margin-bottom: 1rem;
-            padding: 1.5rem;
-            
+            padding: 1.5rem;   
         }
     
         p{
             font-size: 1.8rem;
-            color: white;
+            color: @offwhite;
             padding: 1.5rem;
         }
     }
        
-    
     .how-left-side {
-        // width: 500px;
         max-width: 450px;
-        // border-right: 1px solid red;
     
         img {
             height: auto;
@@ -53,9 +46,7 @@
 
             @media (max-width:500px) {
                 max-width: 300px;
-                
             }
-            
         }
     }
 }
@@ -69,12 +60,8 @@
     
 }
 
-
-/////////
-
 .how-middle-content {
-    // height: 50rem;   
-    background-color: rgb(243, 243, 243)
+    background-color: @offwhite;
 }
 
 
@@ -83,16 +70,14 @@
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    // border: 1px solid red;
     justify-content: space-between;
-    
+   
 }
 
 .step-box{
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    // border: 1px solid red;
     margin-top: 8rem;
     margin-bottom: 8rem
 }
@@ -101,7 +86,7 @@
     width: 100%;
     max-width: 230px;
     margin-bottom: 3rem;
-    background-color:  rgb(248, 248, 248);
+    background-color: @offwhite;
     border-radius: 50%; 
 
     img {
@@ -111,7 +96,7 @@
 }
 
 .step-bottom {
-    color: #274046;
+    color: @secondary;
 
     h3 {
         font-size: 1.8rem;
@@ -128,15 +113,12 @@
     }
 }
 
-
-
 @media (max-width: 500px){
     .how-middle-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        // border: 1px solid red;
     }
 
     .step-box{
@@ -145,7 +127,6 @@
         align-items: center;
     }
     
-
     .step-bottomn{
         width: 100%;
         max-width: 100%;
@@ -154,6 +135,5 @@
     .step-box:last-child{
         margin-bottom: 7rem;
     }
-
 }
 

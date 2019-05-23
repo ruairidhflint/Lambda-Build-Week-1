@@ -4,10 +4,9 @@ header{
     position: fixed;
     top: 0;
     margin: 0 auto;
-    background-color: white;
-    color: red;
+    background-color: @white;
+    color: @mainred;
     z-index: 1;
-    // border: 1px solid green;
 
     @media (max-width: 500px){
         max-width: auto;
@@ -19,10 +18,7 @@ header{
                 color: rgb(212, 2, 2);
                 cursor: pointer;
             }
-       
     }
-
-    
 }
 
 
@@ -40,7 +36,6 @@ header{
         width: 100%;
         padding: 1rem 0;
     }
-    
 }
 
 .nav{
@@ -49,8 +44,8 @@ header{
     @media(max-width:500px){
         padding-top: 1rem;
     }
-
 }
+
 ul {
     display: flex;
     margin-right: 3rem;
