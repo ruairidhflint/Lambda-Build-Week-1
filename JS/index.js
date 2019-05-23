@@ -37,6 +37,11 @@ submitButton.addEventListener('click', submitted);
 
 signupButton.addEventListener('click', closeMenu);
 
+
+window.addEventListener('resize', closeMenu)
 function closeMenu(){
+    if (!loginPanel.classList.contains('hidden1')){
     loginPanel.classList.toggle('hidden1')
+    }
 };
+
