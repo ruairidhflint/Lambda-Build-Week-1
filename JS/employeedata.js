@@ -19,7 +19,6 @@ let employees = employees1.filter(x => {
     return x.include == "yes";
 })
 
-
 // Create variable for the section whereby the emoployees will injected. Styling is already complete in the CSS.
 
 const docLocation = document.querySelector('.about-container');

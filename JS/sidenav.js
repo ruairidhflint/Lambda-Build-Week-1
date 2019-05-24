@@ -1,6 +1,7 @@
 let hamburgerButton = document.querySelector('.hamburger');
 let sideNav = document.querySelector('.side-nav');
 let closeButton = document.querySelector('.close');
+let navText = document.querySelector('.side-nav-bar');
 
 hamburgerButton.addEventListener('click', openNav);
 closeButton.addEventListener('click', closeNav);

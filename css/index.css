@@ -243,6 +243,7 @@ li:hover {
   z-index: 3;
 }
 .side-nav-bar {
+  width: 100px;
   display: flex;
   flex-direction: column;
   height: 400px;
