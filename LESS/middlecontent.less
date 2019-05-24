@@ -1,0 +1,43 @@
+.middle-content {
+    background-color: @offwhite;
+}
+
+.middle-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20%;   
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.text {
+    max-width: 450px;
+    padding: 2rem;
+
+    h3{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+        line-height: 2rem;  
+    }
+
+}
+
+@media @mobile {
+    .middle-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text {
+        max-width: 90%;
+    }
+}

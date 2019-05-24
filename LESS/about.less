@@ -1,0 +1,140 @@
+.about-us{
+    margin-top: 7rem;
+    background-image: linear-gradient(to right, @primary , @secondary);
+    display: flex;
+    @media @mobile {
+        margin-top: 2rem;
+    }
+}
+
+.about-top-container{
+    margin: 0 auto;
+    width: 950px;
+    max-width: 950px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    
+    }
+
+    .about-right-side {
+        width: 100%;
+        max-width: 450px;
+        padding: 10rem 0;
+
+        @media @mobile {
+            text-align:center;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: @white;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: @white;
+            
+            padding: 1rem;
+
+            span{
+                font-size: 1.5rem;
+                padding-left: 1rem;
+            }
+        }
+    
+        p{
+            font-size: 1.5rem;
+            color: @white;
+            padding: 1.5rem;
+        }
+    }
+    
+    .about-left-side {
+        max-width:450px;
+
+        @media @mobile {
+            max-width: 350px;
+        }
+    
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
+@media @mobile {
+    .about-top-container{
+        flex-direction: column-reverse;
+        margin-top: 0rem;
+    }
+}
+
+
+.about-content{
+    display: flex;
+    @media @mobile {
+        margin-top: 2rem;
+    }
+}
+
+.about-container{
+    margin: 0 auto;
+    width: 950px;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+.employee {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    color: @secondary;
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        @media @mobile {
+            text-align: center;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 120%;
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.employee-left{
+    width: 100%;
+    max-width: 200px;
+
+    img{
+        height: auto;
+        max-width: 100%;    
+        border-radius: 50%;
+    }
+}
+
+.employee-right{
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    @media @mobile {
+        width: 90%;
+    }
+}
+
+

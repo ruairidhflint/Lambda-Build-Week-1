@@ -1,0 +1,102 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    background-color: @white;
+    color: @mainred;
+    z-index: 1;
+
+    @media @mobile {
+        max-width: auto;
+    }
+    .logo {
+        font-size: 2rem;
+        padding-left: 2rem;
+         &:hover{
+                color: rgb(212, 2, 2);
+                cursor: pointer;
+            }
+    }
+}
+
+.navbar{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    top: 0;
+    @media @mobile {
+        // flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+        
+    }
+}
+
+.nav{
+    font-size: 1.25rem;
+    color: darkgrey;
+    @media (max-width: 700px) {
+        padding-top: 1rem;
+        display: none;
+    }
+}
+
+ul {
+    display: flex;
+    margin-right: 3rem;
+}
+
+li {
+    padding: 0 2rem;
+    cursor: pointer;
+    @media @mobile {
+        padding: 0 1rem;
+    }
+
+    &:nth-child(4){
+        color: rgb(120, 120, 120)
+    }
+
+    &:hover {
+        color: rgb(200, 200, 200);
+    }
+}
+
+.buttonlogin {
+    @media (max-width: 850px) {
+        display: none;
+    }
+}
+
+.buttonloginmobile {
+    display: none;
+    @media (max-width: 850px) {
+        display: block;
+    }
+}
+
+
+///
+.hamburger {
+    height: 20px;
+    width: 20px;
+    display: none;
+    margin-right: 5rem;
+    @media (max-width: 700px){
+        display: block;
+
+    }
+
+    .line{
+        height: 3px;
+        width: 20px;
+        background-color: lightgrey;
+        margin-top: 3px;
+    }
+}
+

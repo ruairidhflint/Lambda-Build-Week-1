@@ -1,0 +1,135 @@
+.how-content{
+    margin-top: 7rem;
+    background-image: linear-gradient(to right, @primary , @secondary);
+    display: flex;
+    @media @mobile {
+        margin-top: 2rem;
+    }
+}
+
+.how-container{
+    margin: 0 auto;
+    width: 950px;
+    max-width: 950px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    
+    .how-right-side {
+        width: 100%;
+        max-width: 450px;
+        padding: 10rem 0;
+        
+        h2 {
+            font-size: 3rem;
+            color: @white;
+            margin-bottom: 1rem;
+            padding: 1.5rem;   
+        }
+    
+        p{
+            font-size: 1.8rem;
+            color: @offwhite;
+            padding: 1.5rem;
+        }
+    }
+       
+    .how-left-side {
+        max-width: 450px;
+    
+        img {
+            height: auto;
+            max-width: 100%;
+
+            @media @mobile {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media @mobile {
+    .how-container{
+        flex-direction: column-reverse;
+        margin-top: 0rem;
+    }
+}
+
+.how-middle-content {
+    background-color: @offwhite;
+}
+
+
+
+.how-middle-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 8rem;
+    margin-bottom: 8rem
+}
+
+.step-top{
+    width: 100%;
+    max-width: 230px;
+    margin-bottom: 3rem;
+    background-color: @offwhite;
+    border-radius: 50%; 
+
+    img {
+        height: 200px;
+        max-width: 100%;
+    }
+}
+
+.step-bottom {
+    color: @secondary;
+
+    h3 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        span{
+            color: rgb(82, 82, 82);
+        }
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+@media @mobile{
+    .how-middle-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .step-box{
+        margin-bottom: 2rem;
+        max-width: 350px;
+        align-items: center;
+    }
+    
+    .step-bottomn{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .step-box:last-child{
+        margin-bottom: 7rem;
+    }
+}
+
