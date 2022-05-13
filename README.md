@@ -1,3 +1,6 @@
+- First major project at Lambda School - kept for posterity. 
+
+
 # Pintereach - User Build Week 1 - Ruairidh Flint
 
 I was given the following brief to design the basic aesthetic site layout and landing pages:
